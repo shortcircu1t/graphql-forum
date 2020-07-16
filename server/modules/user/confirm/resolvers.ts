@@ -7,7 +7,7 @@ export const resolvers = {
       try {
         const result = await redis.get(token);
         if (!result) {
-          throw new Error("Password reset token is invalid or has expired.");
+          throw new Error("Token is invalid or has expired.");
         }
         await redis.del(token);
         await User.update({ confirmed: true }, { where: { id: result } });
