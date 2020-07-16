@@ -8,5 +8,5 @@ export const COMMENTS_PAGE_SIZE: number = 5;
 export const POSTS_PAGE_SIZE: number = 5;
 export const CATEGORIES: string[] = ["sports", "gaming", "arts", "books"];
 export const ONE_DAY_SECS: number = 60 * 1000;
-export const PROD_ENDPOINT: string = "https://new-graphql-forum.herokuapp.com";
+export const PROD_ENDPOINT: string = "https://graphql-forum.herokuapp.com";
 export const DEV_ENDPOINT: string = "http://localhost:4000";
