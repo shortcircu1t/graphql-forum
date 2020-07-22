@@ -1,7 +1,6 @@
 import React, { ReactElement, ReactNode } from "react";
 import Header from "./Header/Header";
 import Head from "next/head";
-import setupAnalytics from "../utils/setupAnalytics";
 
 interface Props {
   children: ReactNode;

@@ -71,6 +71,7 @@
     "yup": "^0.29.1"
   },
   "devDependencies": {
+    "typescript": "^3.8.3",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@types/bluebird": "^3.5.32",
     "@types/connect-redis": "0.0.14",
@@ -90,7 +91,6 @@
     "@types/validator": "^13.0.0",
     "@types/yup": "^0.29.3",
     "copyfiles": "^2.3.0",
-    "postcss-preset-env": "^6.7.0",
-    "typescript": "^3.8.3"
+    "postcss-preset-env": "^6.7.0"
   }
 }
