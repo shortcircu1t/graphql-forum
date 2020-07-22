@@ -20,6 +20,20 @@ class MyDocument extends Document {
         }
       >
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-173273228-2"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `  
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-173273228-2');
+              `,
+            }}
+          />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"

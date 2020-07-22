@@ -19,17 +19,6 @@ export default function Layout({
   return (
     <>
       <Head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-173273228-2"
-        ></script>
-        <script>
-          {
-            //@ts-ignore
-          }
-          {setupAnalytics()}
-        </script>
-
         <title>{title}</title>
         <meta name="description" content={description}></meta>
       </Head>
