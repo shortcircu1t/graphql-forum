@@ -16,7 +16,7 @@ export default (userId: string): string => {
       if (!user?.locked) {
         user?.update({ locked: false });
       }
-    }, ONE_DAY_SECS);
+    }, ONE_DAY_SECS * 1000);
   });
   return IS_PRODUCTION
     ? `${PROD_ENDPOINT}/user/passwordReset/${token}`
