@@ -33,7 +33,7 @@ export default function PostMini({ post }: Props): ReactElement {
             Read the post to leave a reaction!
           </div>
         </div>
-        <h2 className="mb-2 text-xl lg:text-3xl">{post.title}</h2>
+        <h2 className="mb-2 text-xl truncate lg:text-3xl">{post.title}</h2>
         <p className="mb-2 truncate text-secondary">{post.body}</p>
         <YellowUnderlinedLink href={`/post/${post.id}`}>
           Open

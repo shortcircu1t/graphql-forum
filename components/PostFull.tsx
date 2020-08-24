@@ -78,7 +78,7 @@ export default function PostFull({ post }: Props): ReactElement {
     });
   return (
     <article className="p-5">
-      <h1 className="mb-3 text-2xl lg:text-4xl">{post.title}</h1>
+      <h1 className="mb-3 text-2xl break-words lg:text-4xl">{post.title}</h1>
       <div className="flex justify-between mb-3 ">
         <CreatorAndDate
           username={post.user.username}
@@ -109,7 +109,7 @@ export default function PostFull({ post }: Props): ReactElement {
           className="w-full m-auto"
         />
       )}
-      <p className="mt-2 mb-5 text-lg leading-relaxed break-words lg:text-2xl">
+      <p className="mt-2 mb-5 text-lg leading-relaxed text-justify break-words lg:text-2xl">
         {post.body}
       </p>
       {me && me?.username !== post.user.username && (

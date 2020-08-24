@@ -50,10 +50,10 @@ export const resolvers = {
               let commentDislike;
               if (user) {
                 commentLike = await CommentLike.findOne({
-                  where: { commentId: plainComment.id },
+                  where: { commentId: plainComment.id, userId: user.id },
                 });
                 commentDislike = await CommentDislike.findOne({
-                  where: { commentId: plainComment.id },
+                  where: { commentId: plainComment.id, userId: user.id },
                 });
               }
               return {
