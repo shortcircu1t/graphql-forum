@@ -40,7 +40,6 @@ MyApp.getInitialProps = async (props: any) => {
     serverCookies: readonlyCookies,
   });
 
-  // console.log(props);
   const appProps = await NextApp.getInitialProps(props);
   const {
     pageProps: { apolloClient },

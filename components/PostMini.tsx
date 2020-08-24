@@ -3,12 +3,14 @@ import { Post } from "../types/types";
 import Reaction from "./Reaction";
 import CreatorAndDate from "./CreatorAndDate";
 import YellowUnderlinedLink from "./Links/YellowUnderlinedLink";
+import { useMe } from "../hooks/useMe";
 
 interface Props {
   post: Post;
 }
 
 export default function PostMini({ post }: Props): ReactElement {
+  const { me } = useMe();
   return (
     <>
       <div className="w-full p-4 font-normal border-b-2 post border-black-light">
@@ -30,7 +32,9 @@ export default function PostMini({ post }: Props): ReactElement {
             <Reaction number={post.comments} id="comment" />
           </div>
           <div className="bg-black-light popup">
-            Read the post to leave a reaction!
+            {me
+              ? "Read the post to leave a reaction!"
+              : "Sign in and read the post to leave a reaction!"}
           </div>
         </div>
         <h2 className="mb-2 text-xl truncate lg:text-3xl">{post.title}</h2>
