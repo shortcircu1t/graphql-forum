@@ -52,7 +52,11 @@ const Login = ({ openRegisterForm }: Props): ReactElement => {
                   },
                 });
                 if (window) {
-                  window.location.reload();
+                  if (window.location.href.includes("confirm")) {
+                    window.location.replace("/");
+                  } else {
+                    window.location.reload();
+                  }
                 }
               } catch (error) {
                 console.log(error);
