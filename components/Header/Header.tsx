@@ -27,7 +27,7 @@ export default function Header({ activeLink }: Props): ReactElement {
   });
   return (
     <>
-      <header>
+      <header className="fixed top-0">
         <div className="flex items-center justify-between w-full h-16 px-4 mx-auto mb-5 border-b-2 border-solid lg:px-12 lg:justify-center lg:h-20 border-black-light">
           <nav className="flex items-center w-full lg:justify-center ">
             <Logo />
