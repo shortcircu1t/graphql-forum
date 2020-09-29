@@ -78,12 +78,9 @@ export default function Header({ activeLink }: Props): ReactElement {
       <style jsx global>{`
         body {
           ${isMobileNavOpen
-            ? `position: fixed;
+            ? `
                overflow: hidden;
-               height: 100vh;
-               width: 100%;
-               left: 0;
-               top: 0;`
+               `
             : ``}
         }
       `}</style>
